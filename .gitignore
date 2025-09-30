@@ -38,6 +38,6 @@ Thumbs.db
 *.js.map
 
 # Keep source TypeScript files, README, and essential configs
-!asparaCamera.ts
+!asparaMicrobitMakecodeCameraExtension.ts
 !README.md
 !pxt.json
