@@ -8,7 +8,7 @@
     },
     "files": [
         "README.md",
-        "asparaMicrobitMakecodeCameraExtension.ts"
+        "asparaCamera.ts"
     ],
     "public": true,
     "targetVersions": {
