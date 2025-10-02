@@ -48,7 +48,7 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 
 ## Line Tracking
 * Follow the line with specified color and return the line coordinates
-* You could use the $\textcolor{Cyan}{\text{"Line Tracking Select Color"}}$ block or $\textcolor{Cyan}{\text{"Line Tracking Set Color"}}$ block to select your target color
+* You could use the $\textcolor{Cyan}{\text{"Line Tracking Set Color"}}$ block or $\textcolor{Cyan}{\text{"Line Tracking Set Color"}}$ block to select your target color
 
     <img src="./pngs/proj_line_tracking_select_color.png" width="auto" height="80"/> <img src="./pngs/proj_line_tracking_select_predefined_color.png" width="auto" height="80">
 
