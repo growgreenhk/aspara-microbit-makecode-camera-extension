@@ -78,7 +78,7 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 * Demo: https://makecode.microbit.org/S57813-64135-25137-48434
 
 ## Object Classifcation
-* Generate Object Classification and return the name of the detected object.
+* General Object Classification and return the name of the detected object.
 
 * Demo: https://makecode.microbit.org/S42923-67730-61115-17309
 
