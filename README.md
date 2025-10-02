@@ -48,7 +48,7 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 
 ## Line Tracking
 * Follow the line with specified color and return the line coordinates
-* You could use the $\textcolor{Cyan}{\text{"Line Tracking Select Color"}}$ block or $\textcolor{Cyan}{\text{"Line Tracking Set Color"}}$ block to select your target color
+* You could use the <B><I><span style="color: cyan;">"Line Tracking Select Color"</span></I></B> block or <B><I><span style="color: cyan;">"Line Tracking Set Color"</span></I></B> block to select your target color
 
     <img src="./pngs/proj_line_tracking_select_color.png" width="auto" height="80"/> <img src="./pngs/proj_line_tracking_select_predefined_color.png" width="auto" height="80">
 
@@ -56,7 +56,7 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 
 ## Color Tracking
 * Follow the object with specified color and return the coordinates
-* You could use the $\textcolor{Cyan}{\text{"Color Tracking Select Color"}}$ block or $\textcolor{Cyan}{\text{"Color Tracking Set Color"}}$ block to select your target color
+* You could use the <B><I><span style="color: cyan;">"Color Tracking Select Color"</span></I></B> block or <B><I><span style="color: cyan;">"Color Tracking Set Color"</span></I></B> block to select your target color
 
     <img src="./pngs/proj_color_tracking_select_color.png" width="auto" height=80/> <img src="./pngs/proj_color_tracking_select_predefined_color.png" width = "auto" height=80>
 
@@ -85,7 +85,7 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 ## Image Classification
 * To detect the user labelled ojects on the display and return the label of the result.
 
-* You could use the $\textcolor{Cyan}{\text{"Capture Image With Label \#"}}$ block to add an image on the display with the input label.
+* You could use the <B><I><span style="color: cyan;">"Capture Image with Label"</span></I></B> block to add an image on the display with the input label.
 
     E.g.
 
@@ -93,7 +93,7 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
     
     would add the image on the display with label "apple" when button "A" is pressed.
 
-* You could use the $\textcolor{Cyan}{\text{"Image Classfication Clear All Labels"}}$ block to clear all labels.
+* You could use the <B><I><span style="color: cyan;">"Image Classfication Clear All Labels"</span></I></B> block to clear all labels.
 
     E.g.
 
