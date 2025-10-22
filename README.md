@@ -116,7 +116,7 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 ## Scan Number
 * Detect the numer 0 - 9 on the display
 
-* Demo: https://makecode.microbit.org/S05224-48559-62435-22184
+* Demo: https://makecode.microbit.org/S86583-57556-42878-36776
 
 ## Scan Alphabet
 * Detect the numer A - Z, 0 - 9 on the display
@@ -132,3 +132,13 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 * Set the WiFi SSID and password
 
 * Demo: https://makecode.microbit.org/S13281-72802-37846-52575
+
+## Take User Photo Demo
+* Take a user photo and save to device
+
+* Demo: https://makecode.microbit.org/S91673-02246-61208-06965
+
+## Take Plant Photo Demo
+* Take a planting photo on aspara Smart Grower
+
+* Demo: https://makecode.microbit.org/S23513-65452-25410-30947
