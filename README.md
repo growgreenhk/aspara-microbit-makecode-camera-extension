@@ -113,6 +113,12 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 
 * Demo: https://makecode.microbit.org/S47076-23103-19746-57899
 
+## Custom Model Image classification
+* Detect the custom objects in the user model
+
+* Demo: https://makecode.microbit.org/S47076-23103-19746-57899
+    * please consult [Using aspara Camera To Create Custom Image Classification Model With Teachable Machine](./docs/Using_aspara_Camera_To_Create_Custom_Image_Classification_Model_With_Teachable_Machine.md) to make your own models
+
 ## Scan Number
 * Detect the numer 0 - 9 on the display
 
@@ -132,6 +138,9 @@ This is the micro:bit MakeCode Extension for controlling the asparaCamera by [Gr
 * Set the WiFi SSID and password
 
 * Demo: https://makecode.microbit.org/S13281-72802-37846-52575
+
+## Set Camera and Device Display Orientation Angles
+* By setting the Camera and the Device LCD display Orientation Angles (0°, 90°, 180° or 270°), you could capture and display correctly with different device orientations.
 
 ## Take User Photo Demo
 * Take a user photo and save to device
