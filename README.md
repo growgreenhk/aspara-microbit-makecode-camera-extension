@@ -30,7 +30,7 @@ This is the micro:bit MakeCode Extension for controlling the aspara Camera by [G
     <img src="./pngs/proj_tx_rx_pins.png" width=200 height="auto"/>
 
 ### Set the aspara Camera to a feature mode.
-* E.g. Set to the "Line Tracking" mode
+* E.g. Set to "Line Tracking" mode
 
     <img src="./pngs/proj_ext_select_mode.png" width="180" height="auto"/>
 
