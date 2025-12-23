@@ -24,17 +24,17 @@ This is the micro:bit MakeCode Extension for controlling the aspara Camera by [G
     <img src="./pngs/proj_ext_complete.png" width=102 height="auto">
 
 ## How to use the extension
-### On start - assign the UART Comm port "tx pin" and "rx pin"
+### On start - assign the serial communication port's [tx] and [rx] pins
 * E.g. P0 to "tx pin" and P1 to "rx pin"
 
     <img src="./pngs/proj_tx_rx_pins.png" width=200 height="auto"/>
 
-### Assign the aspara Camera to a feature mode.
-* E.g. to the "Line Tracking" mode
+### Set the aspara Camera to a feature mode.
+* E.g. Set to the "Line Tracking" mode
 
     <img src="./pngs/proj_ext_select_mode.png" width="180" height="auto"/>
 
-### Quit a feature mode
+### Exit the feature mode
 * Select "none" mode
 
     <img src="./pngs/proj_ext_select_none.png" width="120" height="auto"/>
@@ -46,7 +46,7 @@ This is the micro:bit MakeCode Extension for controlling the aspara Camera by [G
 
 * Wait for result ready, then get the result string or number
 
-## Line Tracking
+## [Mode] Line Tracking
 * Follow the line with specified color and return the line coordinates
 * You could use the <B><I><span style="color: cyan;">"Line Tracking Select Color"</span></I></B> block or <B><I><span style="color: cyan;">"Line Tracking Set Color"</span></I></B> block to select your target color
 
@@ -54,7 +54,7 @@ This is the micro:bit MakeCode Extension for controlling the aspara Camera by [G
 
 * Demo: https://makecode.microbit.org/S82535-81900-19008-26073
 
-## Color Tracking
+## [Mode] Color Tracking
 * Follow the object with specified color and return the coordinates
 * You could use the <B><I><span style="color: cyan;">"Color Tracking Select Color"</span></I></B> block or <B><I><span style="color: cyan;">"Color Tracking Set Color"</span></I></B> block to select your target color
 
@@ -62,27 +62,27 @@ This is the micro:bit MakeCode Extension for controlling the aspara Camera by [G
 
 * Demo: https://makecode.microbit.org/S24837-51094-76361-54804
 
-## Object Detection
+## [Mode] Object Detection
 * General Oject detection and return the number of detected objects.
 
 * Demo: https://makecode.microbit.org/S58563-16833-87646-54598
 
-## Plant Diagnosis
+## [Mode] Plant Diagnosis
 * Detect the plant health and return the name of the planting problem
 
 * Demo: https://makecode.microbit.org/S54546-52129-52097-99486
 
-## Green/Red Lettuce Classification
+## [Mode] Green/Red Lettuce Classification
 * To detect the plant is Green lettuce or Red lettuce, and it returns "Green" or "Red"
 
 * Demo: https://makecode.microbit.org/S57813-64135-25137-48434
 
-## Object Classifcation
+## [Mode] Object Classifcation
 * General Object Classification and return the name of the detected object.
 
 * Demo: https://makecode.microbit.org/S42923-67730-61115-17309
 
-## Image Classification
+## [Mode] Image Classification
 * To detect the user labelled ojects on the display and return the label of the result.
 
 * You could use the <B><I><span style="color: cyan;">"Capture Image with Label"</span></I></B> block to add an image on the display with the input label.
@@ -103,37 +103,36 @@ This is the micro:bit MakeCode Extension for controlling the aspara Camera by [G
 
 * Demo: https://makecode.microbit.org/S45171-11395-85226-25804
 
-## Face Detection
+## [Mode] Face Detection
 * Detect how many faces on the display and return the number of faces.
 
 * Demo: https://makecode.microbit.org/S41911-72788-99219-78181
 
-## Facial Expression Detection
+## [Mode] Facial Expression Detection
 * Detect the facial expression on the display
 
 * Demo: https://makecode.microbit.org/S47076-23103-19746-57899
 
-## Custom Model Image classification
+## [Mode] Custom Model Image classification
 * Detect the custom objects in the user model
 
 * Demo: https://makecode.microbit.org/S25031-48926-03975-79534
-    * please consult either,
+    * To make your own models, use any of the methods below:
         1. [Using aspara Camera To Create Custom Image Classification Model By Teachable Machine](./docs/Using_aspara_Camera_To_Create_Custom_Image_Classification_Model_By_Teachable_Machine.md) 
         2. [Using aspara Camera To Create Custom Image Classification Model By Google Colab](./docs/Using_aspara_Camera_To_Create_Custom_Image_Classification_Model_By_Google_Colab.md)
     
-        to make your own models
 
-## Scan Number
+## [Mode] Scan Number
 * Detect the numer 0 - 9 on the display
 
 * Demo: https://makecode.microbit.org/S86583-57556-42878-36776
 
-## Scan Alphabet
+## [Mode] Scan Alphabet
 * Detect the numer A - Z, 0 - 9 on the display
 
 * Demo: https://makecode.microbit.org/S08673-11210-13515-81797
 
-## Scan QR/BarCode
+## [Mode] Scan QR/Bar Code
 * Detect any QR/Bar code on the display, then return the detected content
 
 * Demo: https://makecode.microbit.org/S70205-94493-05894-36101
