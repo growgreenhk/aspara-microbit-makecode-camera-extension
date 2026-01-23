@@ -3,10 +3,13 @@
 //% icon="\uf030"
 //% color="#00AAA0"
 namespace asparaCamera {
-    let lastResult = ""
+    let lastResult = "";
+    let pingpongResult = "";
+    let pingpongPacket = "";
+    let tempResult = "";
     let readNewdata:boolean = false;
     let usbSerialLock:boolean = false;
-    let lock:boolean = false
+    let lock:boolean = false;
     let newdata:boolean = false;
     let assignedTx: SerialPin = SerialPin.P0;
     let assignedRx: SerialPin = SerialPin.P1;
@@ -97,7 +100,7 @@ namespace asparaCamera {
      * @param rx Rx pin; eg: SerialPin.P1
      */
     //% blockId=asparaCamera_init block="asparaCamera init tx %tx rx %rx"
-    //% group="Basic" color="#00AAA0" weight=103
+    //% group="Basic" color="#00AAA0" weight=104
     export function asparaCameraInit(tx: SerialPin, rx: SerialPin): void {
         assignedRx = rx;
         assignedTx = tx;
@@ -123,7 +126,12 @@ namespace asparaCamera {
                         newdata = false;
                     } else {
                         usbSerialLock = true
-                        lastResult = serial.readUntil(serial.delimiters(Delimiters.NewLine));
+                        tempResult = serial.readUntil(serial.delimiters(Delimiters.NewLine));
+                        if (tempResult.indexOf("pingpong") >= 0) {
+                            pingpongResult = tempResult;
+                        } else {
+                            lastResult = tempResult;
+                        }
                         newdata = true;
                     }
                     usbSerialLock = false
@@ -139,7 +147,7 @@ namespace asparaCamera {
     * Select the operation mode of asparaCamera
     */
     //% blockId=asparaCamera_select_mode block="Select Mode %func"
-    //% group="Basic" color="#00AAA0" weight=102
+    //% group="Basic" color="#00AAA0" weight=103
     //% func.fieldEditor="gridpicker"
     //% func.fieldOptions.columns=3
     export function selectMode(func: ModeEnum): void {
@@ -187,6 +195,28 @@ namespace asparaCamera {
                 serial.writeLine("start qr bar code")
                 break;
         }
+    }
+
+    /**
+    * Camera Connected
+    */
+    //% blockId=camera_connected block="Camera Connected"
+    //% group="Basic" color="#00AAA0" weight=102
+    export function CameraConnected(): boolean {
+        pingpongResult = "";
+        let randomNum = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000).toString();
+        let pingpongCore = "pingpong" + randomNum;
+        pingpongPacket = "'" + pingpongCore + "'";
+        serial.writeLine("echo " + pingpongPacket);
+        for(let i=0; i < 100; i++) {
+            if (pingpongResult.length > 0) {
+                if (pingpongResult.indexOf(pingpongCore) >= 0) {
+                    return true;
+                }
+            }
+            basic.pause(50);
+        }
+        return false;
     }
 
     /**
