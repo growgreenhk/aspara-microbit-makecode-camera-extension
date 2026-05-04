@@ -157,6 +157,11 @@ This is the micro:bit MakeCode Extension for controlling the aspara Camera by [G
 
 * Demo: https://makecode.microbit.org/S91673-02246-61208-06965
 
+## Take Raw Photo Demo
+* Take a raw photo and save to device
+
+* Demo: https://makecode.microbit.org/S91673-02246-61208-06965
+
 ## Take Plant Photo Demo
 * Take a planting photo on aspara Smart Grower
 
